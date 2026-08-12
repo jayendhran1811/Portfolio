@@ -23,7 +23,7 @@ const projects = [
     live: '#'
   },
   {
-    title: 'OS Management System',
+    title: 'TaskCore — Process Scheduling Simulator',
     desc: 'An intermediate Java-based application designed to simulate and demonstrate process management, scheduling, and resource management.',
     detailedDesc: 'Developed a Java application to demonstrate core operating system concepts and improve practical understanding of process and resource management. The project applies object-oriented programming and data-structure concepts to model operating-system operations in a simplified environment. Key Features: Process Management, Scheduling, Resource Management.',
     image: 'https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=800&auto=format&fit=crop',
@@ -44,10 +44,10 @@ function ProjectCard({ proj, idx }) {
     >
       <div>
         <div className="relative h-56 overflow-hidden">
-          <img 
-            src={proj.image} 
-            alt={proj.title} 
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 md:grayscale md:group-hover:grayscale-0" 
+          <img
+            src={proj.image}
+            alt={proj.title}
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 md:grayscale md:group-hover:grayscale-0"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent" />
           <div className="absolute bottom-4 left-4 flex flex-wrap gap-1.5">
@@ -61,7 +61,7 @@ function ProjectCard({ proj, idx }) {
 
         <div className="p-6 pb-2">
           <h3 className="text-2xl font-bold font-outfit mb-2 group-hover:text-blue-500 transition-colors">{proj.title}</h3>
-          
+
           <div className="text-slate-400 text-sm mb-4 transition-all duration-300">
             {isExpanded ? (
               <p className="leading-relaxed">{proj.detailedDesc}</p>
@@ -69,8 +69,8 @@ function ProjectCard({ proj, idx }) {
               <p className="line-clamp-2 leading-relaxed">{proj.desc}</p>
             )}
           </div>
-          
-          <button 
+
+          <button
             onClick={() => setIsExpanded(!isExpanded)}
             className="text-xs font-semibold text-blue-400 hover:text-blue-300 focus:outline-none transition-colors"
           >
@@ -80,16 +80,16 @@ function ProjectCard({ proj, idx }) {
       </div>
 
       <div className="p-6 pt-4 flex gap-4">
-        <a 
-          href={proj.github} 
-          target="_blank" 
-          rel="noopener noreferrer" 
+        <a
+          href={proj.github}
+          target="_blank"
+          rel="noopener noreferrer"
           className="p-3 bg-white/5 rounded-full hover:bg-blue-600 hover:text-white transition-all"
         >
           <Github size={20} />
         </a>
-        <a 
-          href={proj.live} 
+        <a
+          href={proj.live}
           className="p-3 bg-white/5 rounded-full hover:bg-blue-600 hover:text-white transition-all"
         >
           <ExternalLink size={20} />
@@ -103,7 +103,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-24">
       <div className="max-w-7xl mx-auto px-6">
-        <motion.div 
+        <motion.div
           variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView="show"

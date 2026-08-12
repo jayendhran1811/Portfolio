@@ -4,10 +4,10 @@ import { fadeIn } from '../utils';
 import { X, ZoomIn } from 'lucide-react';
 
 const memories = [
-  { id: 1, src: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop', title: 'Coding Late Nights' },
-  { id: 2, src: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&auto=format&fit=crop', title: 'Setup vibe' },
-  { id: 3, src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&auto=format&fit=crop', title: 'Team Collab' },
-  { id: 4, src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop', title: 'Learning phase' },
+  { id: 1, src: '/story-java.png', title: 'Java Development' },
+  { id: 2, src: '/story-sql.png', title: 'Database & SQL' },
+  { id: 3, src: '/story-react.png', title: 'Frontend Integration' },
+  { id: 4, src: '/story-growth.png', title: 'Continuous Growth' },
 ];
 
 export default function About() {
